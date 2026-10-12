@@ -39,12 +39,13 @@ Open http://localhost:8080/.
 | Jobs, dates, achievements ("View Wins") | [src/components/Experience.tsx](src/components/Experience.tsx), in the `experiences` list |
 | Featured project, certifications, talks | [src/components/Highlights.tsx](src/components/Highlights.tsx), in `project`, `certifications` and `talks` |
 | Email, phone, location | [src/components/Contact.tsx](src/components/Contact.tsx) |
-| Nav bar links and the "Tech With Okiya" logo text | [src/components/Navigation.tsx](src/components/Navigation.tsx) |
+| Nav bar links and the "Oscar Okiya" logo text | [src/components/Navigation.tsx](src/components/Navigation.tsx) |
 | Browser tab title, Google and link-preview text | [index.html](index.html): `<title>`, `description`, the `og:*` and `twitter:*` tags, and the JSON-LD block |
 | Downloadable CV | [public/CV_Oscar_Okiya.pdf](public/CV_Oscar_Okiya.pdf) |
 | Link-preview image | [public/og-image.png](public/og-image.png) |
 | Colours and fonts | [src/index.css](src/index.css) (CSS variables) and [tailwind.config.ts](tailwind.config.ts) |
 | Blog posts | Nothing to edit here. Publish on dev.to and they appear automatically. |
+| Blog name ("Tech With Okiya") and blurb | [src/pages/Blog.tsx](src/pages/Blog.tsx) (blog page) and [src/components/RecentBlogs.tsx](src/components/RecentBlogs.tsx) (home page section) |
 
 ### Common edits
 

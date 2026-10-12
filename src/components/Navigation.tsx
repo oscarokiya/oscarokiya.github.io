@@ -92,7 +92,7 @@ export const Navigation = () => {
           to="/" 
           className="text-2xl font-tech font-bold gradient-text animate-shine tracking-wide"
         >
-          Tech With Okiya
+          Oscar Okiya
         </Link>
         
         {/* Desktop Navigation */}

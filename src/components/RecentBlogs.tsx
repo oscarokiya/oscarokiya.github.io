@@ -39,9 +39,9 @@ export const RecentBlogs = () => {
         <div className="container mx-auto">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Recent Blog Posts</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Latest from <span className="font-tech gradient-text">Tech With Okiya</span></h2>
               <p className="text-lg text-muted-foreground">
-                Sharing insights about development, technology, and career growth
+                Notes on cloud infrastructure, system design and DevOps, drawn from real projects
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -71,9 +71,9 @@ export const RecentBlogs = () => {
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Recent Blog Posts</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Latest from <span className="font-tech gradient-text">Tech With Okiya</span></h2>
             <p className="text-lg text-muted-foreground">
-              Sharing insights about development, technology, and career growth
+              Notes on cloud infrastructure, system design and DevOps, drawn from real projects
             </p>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">

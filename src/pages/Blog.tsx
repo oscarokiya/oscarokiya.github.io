@@ -215,11 +215,11 @@ const Blog = () => {
           <div className="text-center mb-4 relative">
             <div className="absolute inset-0 bg-gradient-subtle opacity-50 rounded-3xl"></div>
             <div className="relative z-10 py-16 px-8">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-                Blog
+              <h1 className="text-5xl md:text-6xl font-tech font-bold mb-6 gradient-text">
+                Tech With Okiya
               </h1>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-                Thoughts on development, technology, and everything in between
+                Notes on cloud infrastructure, system design and DevOps, drawn from real projects
               </p>
               <div className="mt-8 flex justify-center">
                 <div className="w-24 h-1 bg-primary rounded-full"></div>
