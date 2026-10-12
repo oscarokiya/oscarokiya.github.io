@@ -31,16 +31,19 @@ export const Hero = () => {
             Cloud Infrastructure Engineer & Acting Solution Architect
           </p>
           <p className="text-lg text-primary/80 font-medium mb-8">
-            I build elegant systems to solve complex challenges
+            Cloud platforms that cost less to run and ship faster
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
-            My passion lies in architecting scalable and maintainable distributed systems, 
-            transforming complex technical problems into elegant, well-designed solutions.
+            5+ years in fintech: I co-led an AWS-to-GCP migration that cut cloud costs by 30%,
+            sped up software delivery by 50%, and run platforms serving 200,000+ customers. Three-times AWS certified.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" onClick={() => scrollToSection('highlights')}>
               Explore My Work
+            </Button>
+            <Button size="lg" variant="outline" onClick={() => scrollToSection('contact')}>
+              Get in Touch
             </Button>
           </div>
 

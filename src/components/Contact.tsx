@@ -12,7 +12,7 @@ export const Contact = () => {
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
             <p className="text-lg text-muted-foreground">
-              Let's discuss your project or just say hello. I'd love to hear from you!
+              Hiring for a cloud or platform role, or need help with a migration, cloud costs or CI/CD? I'd like to hear about it.
             </p>
           </div>
 
@@ -84,7 +84,7 @@ export const Contact = () => {
             <div className="flex flex-col items-start gap-6 p-8 md:p-10 rounded-lg border border-border/50 backdrop-blur-sm bg-card/80">
               <h3 className="text-2xl font-semibold">Ready to get started?</h3>
               <p className="text-muted-foreground">
-                For project inquiries or collaborations, the best way to reach me is directly.
+                Email is the quickest way to reach me. A few lines about the role or project is plenty, and I'll reply.
               </p>
               <div className="flex gap-4">
                 <Button asChild>
