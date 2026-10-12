@@ -1,0 +1,201 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&display=swap');
+
+  :root {
+    --background: 228 25% 18%;
+    --foreground: 210 40% 98%;
+
+    --card: 228 25% 22%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 228 25% 22%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 25 85% 75%;
+    --primary-foreground: 228 25% 18%;
+    --primary-glow: 25 80% 65%;
+    --primary-light: 228 20% 60%;
+
+    --secondary: 228 15% 35%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 228 20% 25%;
+    --muted-foreground: 228 10% 70%;
+
+    --accent: 25 85% 75%;
+    --accent-foreground: 228 25% 18%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 15% 35%;
+    --input: 228 20% 25%;
+    --ring: 25 85% 75%;
+
+    --radius: 0.75rem;
+
+    /* Gradient variables */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-depth: linear-gradient(180deg, hsl(var(--secondary)), hsl(var(--background)));
+
+    --sidebar-background: 228 25% 18%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 25 85% 75%;
+    --sidebar-primary-foreground: 228 25% 18%;
+    --sidebar-accent: 228 20% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 228 15% 30%;
+    --sidebar-ring: 25 85% 75%;
+  }
+
+  .dark {
+    --background: 228 25% 15%;
+    --foreground: 210 40% 98%;
+
+    --card: 228 25% 20%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 228 25% 20%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 25 85% 75%;
+    --primary-foreground: 228 25% 15%;
+    --primary-glow: 25 80% 65%;
+    --primary-light: 228 20% 60%;
+
+    --secondary: 228 15% 30%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 228 20% 22%;
+    --muted-foreground: 228 10% 75%;
+
+    --accent: 25 85% 75%;
+    --accent-foreground: 228 25% 15%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 228 15% 30%;
+    --input: 228 20% 22%;
+    --ring: 25 85% 75%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--primary-glow)), hsl(var(--primary)), hsl(var(--primary-light)));
+    --gradient-depth: linear-gradient(180deg, hsl(var(--secondary)), hsl(var(--background)));
+
+    --sidebar-background: 228 25% 18%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 25 85% 75%;
+    --sidebar-primary-foreground: 228 25% 15%;
+    --sidebar-accent: 228 20% 25%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 228 15% 30%;
+    --sidebar-ring: 25 85% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-subtle {
+    background: var(--gradient-subtle);
+  }
+
+  .gradient-ocean {
+    background: var(--gradient-ocean);
+  }
+
+  .gradient-depth {
+    background: var(--gradient-depth);
+  }
+  
+  .tech-grid-bg {
+    background-image: 
+      linear-gradient(hsl(var(--primary) / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--primary) / 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+    position: relative;
+  }
+  
+  .tech-grid-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 80%, hsl(var(--primary) / 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, hsl(var(--primary-glow) / 0.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  
+  .circuit-pattern {
+    background-image: 
+      radial-gradient(circle at 25% 25%, hsl(var(--primary) / 0.1) 2px, transparent 2px),
+      radial-gradient(circle at 75% 75%, hsl(var(--primary-glow) / 0.08) 1px, transparent 1px);
+    background-size: 40px 40px, 60px 60px;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Custom utility class for text gradients */
+  .gradient-text {
+    background-image: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% auto;
+  }
+}
+
+/* Corrected CSS rules for markdown content to prevent horizontal overflow */
+.prose :where(img, table) {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+.prose pre {
+  overflow-x: hidden !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+.prose pre code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
