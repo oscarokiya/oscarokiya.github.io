@@ -35,7 +35,7 @@ export const Hero = () => {
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto">
             5+ years in fintech: I co-led an AWS-to-GCP migration that cut cloud costs by 30%,
-            sped up software delivery by 50%, and run platforms serving 200,000+ customers. Three-times AWS certified.
+            sped up software delivery by 50%, and run platforms serving 800,000+ customers. Three-times AWS certified.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">

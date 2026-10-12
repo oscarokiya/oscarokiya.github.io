@@ -12,7 +12,7 @@ export const Experience = () => {
       title: "Senior DevOps Engineer (Acting Infrastructure Solution Architect)",
       company: "4G Capital, Nairobi",
       period: "Mar 2022 – Present",
-      description: "Co-lead architect on two end-to-end infrastructure modernisation programmes for fintech systems serving 200,000+ customers.",
+      description: "Co-lead architect on two end-to-end infrastructure modernisation programmes for fintech systems serving 800,000+ customers.",
       technologies: ["GCP", "AWS", "Terraform", "Cloud Run", "Kubernetes", "OpenSearch"],
       wins: [
         "Scoped and co-led two modernisation programmes: AWS ECS to serverless (AWS SAM/CloudFormation), then a full cross-cloud migration to GCP Cloud Run with Terraform, cutting cloud costs by 30% and eliminating manual (ClickOps) changes.",
