@@ -2,11 +2,13 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
-import Blog from "./pages/Blog";
-import BeyondTech from "./pages/BeyondTech";
 import NotFound from "./pages/NotFound";
+
+// Blog pulls in markdown rendering, so load it only when visited
+const Blog = lazy(() => import("./pages/Blog"));
 
 const queryClient = new QueryClient(); // Refreshed
 
@@ -18,8 +20,7 @@ const App = () => (
       <BrowserRouter basename={import.meta.env.BASE_URL}>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/beyond-tech" element={<BeyondTech />} />
+          <Route path="/blog" element={<Suspense fallback={null}><Blog /></Suspense>} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

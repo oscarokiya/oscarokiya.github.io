@@ -28,7 +28,7 @@ export const Hero = () => {
             Hi, My name is <span className="text-primary">Oscar Okiya</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-4">
-            A Solutions Architect & System Design Expert
+            Cloud Infrastructure Engineer & Acting Solution Architect
           </p>
           <p className="text-lg text-primary/80 font-medium mb-8">
             I build elegant systems to solve complex challenges
@@ -39,14 +39,15 @@ export const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button size="lg" onClick={() => scrollToSection('blog')}>
-              Explore My Latest Projects
+            <Button size="lg" onClick={() => scrollToSection('highlights')}>
+              Explore My Work
             </Button>
           </div>
 
           <div className="flex justify-center space-x-4">
             <a
               href="https://github.com/oscarrobert-star"
+              aria-label="GitHub"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -56,6 +57,7 @@ export const Hero = () => {
             </a>
             <a
               href="https://www.linkedin.com/in/oscar-robert-okiya/"
+              aria-label="LinkedIn"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -1,35 +1,7 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { Mail, MapPin, Phone, Send, Github, Linkedin } from "lucide-react";
-import { useState } from "react";
-// Removed the DevTo component import as it is no longer needed
-// import { DevTo } from './DevToIcon'; 
+import { Mail, MapPin, Phone, Github, Linkedin } from "lucide-react";
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
-
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission here
-    console.log("Form submitted:", formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
   return (
     <section 
       id="contact" 
@@ -85,6 +57,7 @@ export const Contact = () => {
                 <div className="flex space-x-4">
                   <a
                     href="https://github.com/oscarrobert-star"
+                    aria-label="GitHub"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4"
@@ -95,6 +68,7 @@ export const Contact = () => {
                   </a>
                   <a
                     href="https://www.linkedin.com/in/oscar-robert-okiya/"
+                    aria-label="LinkedIn"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-4"
@@ -107,7 +81,6 @@ export const Contact = () => {
               </div>
             </div>
 
-            {/* Replaced form with a direct call-to-action message and buttons */}
             <div className="flex flex-col items-start gap-6 p-8 md:p-10 rounded-lg border border-border/50 backdrop-blur-sm bg-card/80">
               <h3 className="text-2xl font-semibold">Ready to get started?</h3>
               <p className="text-muted-foreground">

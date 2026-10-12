@@ -49,6 +49,9 @@ export const Navigation = () => {
       <Button variant="ghost" asChild className="text-lg md:text-base">
         <Link to="/#experience" onClick={() => scrollToSection('experience')}>Experience</Link>
       </Button>
+      <Button variant="ghost" asChild className="text-lg md:text-base">
+        <Link to="/#highlights" onClick={() => scrollToSection('highlights')}>Highlights</Link>
+      </Button>
       
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
@@ -76,9 +79,6 @@ export const Navigation = () => {
         </DropdownMenuContent>
       </DropdownMenu>
 
-      <Button variant="ghost" asChild className="text-lg md:text-base">
-        <Link to="/beyond-tech" onClick={() => setIsMenuOpen(false)}>Beyond Tech</Link>
-      </Button>
       <Button variant="ghost" asChild className="text-lg md:text-base">
         <Link to="/#contact" onClick={() => scrollToSection('contact')}>Contact</Link>
       </Button>

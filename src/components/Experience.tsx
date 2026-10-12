@@ -9,39 +9,43 @@ export const Experience = () => {
 
   const experiences = [
     {
-      title: "Lead Solutions Architect",
-      company: "4G Capital",
-      period: "2022 - Present",
-      description: "Architected and led the implementation of scalable, cost-effective cloud infrastructure and CI/CD pipelines.",
-      technologies: ["AWS", "GCP", "Terraform", "Kubernetes", "Python"],
+      title: "Senior DevOps Engineer (Acting Infrastructure Solution Architect)",
+      company: "4G Capital, Nairobi",
+      period: "Mar 2022 – Present",
+      description: "Co-lead architect on two end-to-end infrastructure modernisation programmes for fintech systems serving 200,000+ customers.",
+      technologies: ["GCP", "AWS", "Terraform", "Cloud Run", "Kubernetes", "OpenSearch"],
       wins: [
-        "Led a cross-cloud migration from AWS to GCP, architecting the infrastructure with Terraform to achieve a 20% reduction in operational overhead and improved cost efficiency.",
-        "Collaborated with finance to design and implement a payment validation system, reducing reconciliation errors by 90% and significantly improving financial accuracy.",
-        "Optimized USSD platform performance by identifying and resolving networking and latency bottlenecks, reducing latencies to under 10 seconds and enhancing customer experience.",
-        "Mentored and guided a team of 4 junior engineers, leading to a 40% improvement in team productivity and onboarding efficiency."
+        "Scoped and co-led two modernisation programmes: AWS ECS to serverless (AWS SAM/CloudFormation), then a full cross-cloud migration to GCP Cloud Run with Terraform, cutting cloud costs by 30% and eliminating manual (ClickOps) changes.",
+        "Accelerated software delivery by 50% with a unified CI/CD architecture across AWS and GCP and a shift from GitFlow to trunk-based development.",
+        "Designed a payment validation solution that reduced reconciliation errors by 90%.",
+        "Architected a high-concurrency messaging platform delivering to 200,000+ customers within a 5-minute window, with capacity planning and cost-per-broadcast reporting.",
+        "Built the platform observability practice from scratch: SLIs, SLOs, SLAs, DORA metrics and OpenSearch dashboards that inform capacity planning.",
+        "Introduced Terraform Cloud so every infrastructure change is reviewed, versioned and audited.",
+        "Mentored 4 junior engineers, improving onboarding speed by 40%."
       ]
     },
     {
-      title: "Devops & Cloud Engineer",
-      company: "AJUA",
-      period: "2021 - 2022",
-      description: "Spearheaded the migration of monolithic systems to containerized, cloud-based microservices, enhancing scalability.",
-      technologies: ["AWS", "Docker", "Kubernetes", "Linux", "Java"],
+      title: "DevOps Engineer",
+      company: "Ajua, Nairobi",
+      period: "Jun 2021 – Jun 2022",
+      description: "Modernised the infrastructure platform, moving services from EC2 to containers on AWS ECS with Terraform-managed infrastructure.",
+      technologies: ["AWS", "ECS", "Terraform", "Vault", "Consul", "PostgreSQL"],
       wins: [
-        "Championed the adoption of containerization, leading to a 40% reduction in infrastructure costs and significantly improved application scalability.",
-        "Executed a strategic migration to a closer AWS region (Ireland) from N. Virginia, reducing user-facing latency by 75%.",
-        "Automated deployment processes by implementing robust CI/CD pipelines using AWS CodePipeline, which reduced manual intervention by 80%."
+        "Consolidated multi-region infrastructure (N. Virginia and Oregon into Ireland) and introduced CloudFront, cutting latency by 75% and infrastructure spend by 40%.",
+        "Migrated all services from EC2 to AWS ECS, standardising deployments and automating rollbacks.",
+        "Configured HashiCorp Vault and Consul for secrets management and service discovery, and adopted Terraform for all provisioning.",
+        "Migrated PostgreSQL from self-managed EC2 to AWS RDS with replication, and consolidated client VPN connectivity."
       ]
     },
     {
-      title: "Cloud Engineer",
-      company: "Recon AI",
-      period: "2021 - 2021",
-      description: "Built scalable and resilient cloud infrastructure and automated deployment workflows for AI applications.",
-      technologies: ["AWS", "CloudFormation", "GitLab CI", "Linux", "Python"],
+      title: "AWS Cloud Consultant",
+      company: "Recon AI, Helsinki (Remote)",
+      period: "Jan 2021 – Mar 2021",
+      description: "Migrated an international client's infrastructure from a contractor-managed GCP environment to AWS.",
+      technologies: ["AWS", "CloudFormation", "GitLab CI", "EC2", "Auto Scaling"],
       wins: [
-        "Leveraged AWS CloudFormation to automate the creation of a scalable and resilient cloud infrastructure, including ECS, load balancers, and auto-scaling groups.",
-        "Successfully integrated GitLab with AWS to fully automate the deployment process, reducing manual effort and accelerating delivery times."
+        "Gathered requirements and architected a scalable, resilient AWS solution (CloudFormation, EC2, ALB, Auto Scaling Groups), presenting the migration design and trade-offs to client stakeholders.",
+        "Integrated GitLab with AWS to automate CI/CD, and implemented backup and disaster recovery using S3 and EBS snapshots."
       ]
     }
   ];

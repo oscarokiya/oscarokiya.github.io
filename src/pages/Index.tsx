@@ -1,15 +1,19 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
+import { useEffect } from "react";
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
+import { Highlights } from "@/components/Highlights";
 import { RecentBlogs } from "@/components/RecentBlogs";
 import { Contact } from "@/components/Contact";
-import { Interests } from "@/components/Interests"; 
 
 const Index = () => {
+  // Sections render after the browser's own anchor jump, so scroll to /#section links once mounted
+  useEffect(() => {
+    const id = window.location.hash.slice(1);
+    if (id) document.getElementById(id)?.scrollIntoView();
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
@@ -17,8 +21,8 @@ const Index = () => {
         <Hero />
         <About />
         <Experience />
+        <Highlights />
         <RecentBlogs />
-        <Interests />
         <Contact />
       </main>
     </div>
